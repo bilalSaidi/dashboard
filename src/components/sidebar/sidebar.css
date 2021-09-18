@@ -5,9 +5,11 @@
   border-top-right-radius: 5px;
   position: sticky;
   top: 70px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
-
+.sidebar:hover {
+  overflow-y: scroll;
+}
 .sideBarContainer {
   padding: 5px 0;
 }
