@@ -12,91 +12,121 @@ import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
 import "./sidebar.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sideBarContainer">
-        {/* Start Side Bar Menu */}
-        <div className="sideBarMenu">
-          <h4 className="headerMenu">dashboard</h4>
-          <ul className="itemsMenu">
-            <li className="itemMenu">
-              <HomeOutlinedIcon />
-              <span className="itemName">home</span>
-            </li>
-            <li className="itemMenu">
-              <TimelineOutlinedIcon />
-              <span className="itemName">analytics</span>
-            </li>
-            <li className="itemMenu">
-              <TrendingUpOutlinedIcon />
-              <span className="itemName">sales</span>
-            </li>
-          </ul>
-        </div>
-        {/* End Side Bar Menu */}
-        {/* Start Side Bar Menu */}
-        <div className="sideBarMenu">
-          <h4 className="headerMenu">quick menu</h4>
-          <ul className="itemsMenu">
-            <li className="itemMenu">
-              <PeopleAltOutlinedIcon />
-              <span className="itemName">users</span>
-            </li>
-            <li className="itemMenu">
-              <AddBusinessOutlinedIcon />
-              <span className="itemName">products</span>
-            </li>
-            <li className="itemMenu">
-              <AttachMoneyOutlinedIcon />
-              <span className="itemName">transictions</span>
-            </li>
-            <li className="itemMenu">
-              <AssignmentOutlinedIcon />
-              <span className="itemName">reports</span>
-            </li>
-          </ul>
-        </div>
-        {/* End Side Bar Menu */}
-        {/* Start Side Bar Menu */}
-        <div className="sideBarMenu">
-          <h4 className="headerMenu">notifications</h4>
-          <ul className="itemsMenu">
-            <li className="itemMenu">
-              <MailOutlinedIcon />
-              <span className="itemName">mail</span>
-            </li>
-            <li className="itemMenu">
-              <FeedbackOutlinedIcon />
-              <span className="itemName">feedback</span>
-            </li>
-            <li className="itemMenu">
-              <ChatBubbleOutlineOutlinedIcon />
-              <span className="itemName">messages</span>
-            </li>
-          </ul>
-        </div>
-        {/* End Side Bar Menu */}
-        {/* Start Side Bar Menu */}
-        <div className="sideBarMenu">
-          <h4 className="headerMenu">staff</h4>
-          <ul className="itemsMenu">
-            <li className="itemMenu">
-              <BusinessCenterOutlinedIcon />
-              <span className="itemName">manage</span>
-            </li>
-            <li className="itemMenu">
-              <TimelineOutlinedIcon />
-              <span className="itemName">analytics</span>
-            </li>
-            <li className="itemMenu">
-              <ReportGmailerrorredOutlinedIcon />
-              <span className="itemName">reports</span>
-            </li>
-          </ul>
-        </div>
-        {/* End Side Bar Menu */}
+        <Router>
+          {/* Start Side Bar Menu */}
+          <div className="sideBarMenu">
+            <h4 className="headerMenu">dashboard</h4>
+            <ul className="itemsMenu">
+              <li className="itemMenu">
+                <Link to="/">
+                  <HomeOutlinedIcon />
+                  <span className="itemName">home</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/analytics">
+                  <TimelineOutlinedIcon />
+                  <span className="itemName">analytics</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/saless">
+                  <TrendingUpOutlinedIcon />
+                  <span className="itemName">sales</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* End Side Bar Menu */}
+          {/* Start Side Bar Menu */}
+          <div className="sideBarMenu">
+            <h4 className="headerMenu">quick menu</h4>
+            <ul className="itemsMenu">
+              <li className="itemMenu">
+                <Link to="/users">
+                  <PeopleAltOutlinedIcon />
+                  <span className="itemName">users</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/products">
+                  <AddBusinessOutlinedIcon />
+                  <span className="itemName">products</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/transictions">
+                  <AttachMoneyOutlinedIcon />
+                  <span className="itemName">transictions</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/reports">
+                  <AssignmentOutlinedIcon />
+                  <span className="itemName">reports</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* End Side Bar Menu */}
+          {/* Start Side Bar Menu */}
+          <div className="sideBarMenu">
+            <h4 className="headerMenu">notifications</h4>
+            <ul className="itemsMenu">
+              <li className="itemMenu">
+                <Link to="/mail">
+                  <MailOutlinedIcon />
+                  <span className="itemName">mail</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/feedback">
+                  <FeedbackOutlinedIcon />
+                  <span className="itemName">feedback</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/messages">
+                  <ChatBubbleOutlineOutlinedIcon />
+                  <span className="itemName">messages</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* End Side Bar Menu */}
+          {/* Start Side Bar Menu */}
+          <div className="sideBarMenu">
+            <h4 className="headerMenu">staff</h4>
+            <ul className="itemsMenu">
+              <li className="itemMenu">
+                <Link to="/manage">
+                  <BusinessCenterOutlinedIcon />
+                  <span className="itemName">manage</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/analytics">
+                  <TimelineOutlinedIcon />
+
+                  <span className="itemName">analytics</span>
+                </Link>
+              </li>
+              <li className="itemMenu">
+                <Link to="/reports">
+                  <ReportGmailerrorredOutlinedIcon />
+                  <span className="itemName">reports</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* End Side Bar Menu */}
+        </Router>
       </div>
     </div>
   );

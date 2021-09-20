@@ -10,6 +10,7 @@
 .sidebar:hover {
   overflow-y: scroll;
 }
+
 .sideBarContainer {
   padding: 5px 0;
 }
@@ -25,7 +26,7 @@
   margin: 0;
   padding: 0;
 }
-.sideBarMenu .itemsMenu .itemMenu {
+.sideBarMenu .itemsMenu .itemMenu a {
   margin: 7px;
   list-style-type: none;
   display: flex;
@@ -33,12 +34,14 @@
   align-items: center;
   cursor: pointer;
   padding: 7px;
+  text-decoration: none;
+  color: black;
 }
-.sideBarMenu .itemsMenu .itemMenu:hover {
+.sideBarMenu .itemsMenu .itemMenu a:hover {
   background-color: #6495ed2b;
   border-radius: 5px;
 }
-.sideBarMenu .itemsMenu .itemMenu span {
+.sideBarMenu .itemsMenu .itemMenu a span {
   display: inline-block;
   margin-left: 7px;
   text-transform: capitalize;
