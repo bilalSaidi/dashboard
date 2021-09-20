@@ -1,17 +1,19 @@
 import React from "react";
-import Home from "./home/Home";
+import Home from "./Home/Home";
+import Users from "./Users/Users";
 import "./pages.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 const Pages = () => {
   return (
     <div className="pages">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/users">
+          <Users />
+        </Route>
+      </Switch>
     </div>
   );
 };

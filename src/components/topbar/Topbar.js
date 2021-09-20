@@ -26,7 +26,7 @@ const Tobpar = () => {
           <div className="imageAdmin">
             <img
               src={require("../../assets/profile/peronal_photo.jpg").default}
-              alt="admin panel personal photo"
+              alt="admin user panel  "
             />
           </div>
         </div>
