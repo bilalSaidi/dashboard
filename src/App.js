@@ -3,7 +3,7 @@ import React from "react";
 import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import Pages from "./components/pages/Pages";
-import "./app.css";
+import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
