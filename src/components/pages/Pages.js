@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Home/Home";
+import Home from "./home/Home";
 import Users from "./Users/Users";
 import "./pages.css";
 import { Switch, Route } from "react-router-dom";
