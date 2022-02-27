@@ -49,12 +49,12 @@ const IMG = styled.img`
   max-height: 100%;
   border-radius: 50%;
 `;
-const Tobpar = () => {
+const Tobpar = ({ openSideBar, setOpenSideBar }) => {
   return (
     <TOPBAR>
       <TOPBARWRAPPER>
         <LOGO>
-          <DASHICON></DASHICON>
+          <DASHICON onClick={() => setOpenSideBar(!openSideBar)}></DASHICON>
           admin dashboard
         </LOGO>
         <LEFTTOPBAR>
