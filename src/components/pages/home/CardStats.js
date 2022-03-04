@@ -6,7 +6,7 @@ const Card = styled.div`
   background-color: white;
   color: black;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 20px 100px 20px 15px;
+  padding: 20px 40px;
   border-top-right-radius: 15px;
 `;
 
@@ -46,7 +46,7 @@ const CardStats = ({ title, money, rate, valuerate, subtitle }) => {
         <MONEY>{money}</MONEY>
         <RATE>
           {rate}
-          {valuerate == "up" ? (
+          {valuerate === "up" ? (
             <VALUERATE up>
               <ArrowUpwardIcon />
             </VALUERATE>

@@ -1,10 +1,11 @@
 import React from "react";
 import CardStats from "./CardStats";
+import Chart from "./Chart";
 import styled from "styled-components";
 
 const CARDHOLDER = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
 const Home = () => {
   return (
@@ -17,7 +18,13 @@ const Home = () => {
           valuerate={"up"}
           subtitle={"compared to last week"}
         />
-
+        <CardStats
+          title={"Active Users"}
+          money={"200"}
+          rate={2.4}
+          valuerate={"up"}
+          subtitle={"compared to last month"}
+        />
         <CardStats
           title={"Cost"}
           money={"1,400.50$"}
@@ -34,6 +41,7 @@ const Home = () => {
           subtitle={"compared to last week"}
         />
       </CARDHOLDER>
+      <Chart />
     </>
   );
 };

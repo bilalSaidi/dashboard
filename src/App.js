@@ -17,9 +17,7 @@ const BODYPAGES = styled.div`
 
 const App = () => {
   const [openSideBar, setOpenSideBar] = useState("true");
-  {
-    console.log(openSideBar);
-  }
+
   return (
     <Router>
       <div className="app">
