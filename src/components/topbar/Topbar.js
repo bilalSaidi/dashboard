@@ -8,7 +8,9 @@ const TOPBAR = styled.div`
   height: 70px;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: rgb(251, 251, 255);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
+  z-index: 1000;
 `;
 const TOPBARWRAPPER = styled.div`
   height: 100%;

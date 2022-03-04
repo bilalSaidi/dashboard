@@ -17,7 +17,7 @@ import styled from "styled-components";
 const SIDEBAR = styled.div`
   height: calc(100vh - 70px);
   background-color: rgb(251, 251, 255);
-  border-top-right-radius: 5px;
+
   position: sticky;
   top: 70px;
   overflow-y: hidden;
