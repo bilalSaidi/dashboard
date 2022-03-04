@@ -1,146 +1,40 @@
 import React from "react";
-import "./home.css";
+import CardStats from "./CardStats";
+import styled from "styled-components";
+
+const CARDHOLDER = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
 const Home = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae
-      beatae et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum. Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum.Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum.Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum.Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum.Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum.Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum.Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum.Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum.Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum.Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum.Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Commodi vitae beatae et eveniet doloremque, vel
-      consequatur quisquam accusantium hic, consectetur sit totam dolorum
-      necessitatibus magnam ut, itaque quos expedita? Illum.Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Commodi vitae beatae et eveniet
-      doloremque, vel consequatur quisquam accusantium hic, consectetur sit
-      totam dolorum necessitatibus magnam ut, itaque quos expedita? Illum.Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Commodi vitae beatae
-      et eveniet doloremque, vel consequatur quisquam accusantium hic,
-      consectetur sit totam dolorum necessitatibus magnam ut, itaque quos
-      expedita? Illum.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Commodi vitae beatae et eveniet doloremque, vel consequatur quisquam
-      accusantium hic, consectetur sit totam dolorum necessitatibus magnam ut,
-      itaque quos expedita? Illum.
-    </div>
+    <>
+      <CARDHOLDER>
+        <CardStats
+          title={"Sales"}
+          money={"2,400.50$"}
+          rate={2.4}
+          valuerate={"up"}
+          subtitle={"compared to last week"}
+        />
+
+        <CardStats
+          title={"Cost"}
+          money={"1,400.50$"}
+          rate={0.4}
+          valuerate={"down"}
+          subtitle={"compared to last week"}
+        />
+
+        <CardStats
+          title={"Revanue"}
+          money={"1,000.50$"}
+          rate={1.05}
+          valuerate={"up"}
+          subtitle={"compared to last week"}
+        />
+      </CARDHOLDER>
+    </>
   );
 };
 
