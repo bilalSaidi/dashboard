@@ -2,10 +2,15 @@ import React from "react";
 import CardStats from "./CardStats";
 import Chart from "./Chart";
 import styled from "styled-components";
-
+import NewMemberWidget from "./NewMemberWidget";
+import TransactionWidget from "./TransactionWidget";
 const CARDHOLDER = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+const WIDJETSHOLDER = styled.div`
+  display: flex;
 `;
 const Home = () => {
   return (
@@ -42,6 +47,10 @@ const Home = () => {
         />
       </CARDHOLDER>
       <Chart />
+      <WIDJETSHOLDER>
+        <NewMemberWidget />
+        <TransactionWidget />
+      </WIDJETSHOLDER>
     </>
   );
 };

@@ -72,7 +72,7 @@ const Tobpar = ({ openSideBar, setOpenSideBar }) => {
             </ICON>
           </LISTICONS>
           <IMG
-            src={require("../../assets/profile/peronal_photo.jpg").default}
+            src={"/assets/profile/peronal_photo.jpg"}
             alt="admin user panel  "
           />
         </LEFTTOPBAR>
