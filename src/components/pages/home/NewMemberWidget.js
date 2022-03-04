@@ -53,6 +53,10 @@ const BTNDISPLAY = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  transition: all 0.5s ease-out;
 `;
 
 const BTNTEXT = styled.span`
