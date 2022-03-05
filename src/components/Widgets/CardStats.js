@@ -38,12 +38,12 @@ const SUBTITLE = styled.span`
 const VALUERATE = styled.div`
   ${(props) => (props.up ? "color:green" : "color:red")}
 `;
-const CardStats = ({ title, money, rate, valuerate, subtitle }) => {
+const CardStats = ({ title, number, rate, valuerate, subtitle }) => {
   return (
     <Card>
       <TITLE>{title}</TITLE>
       <FEATURED>
-        <MONEY>{money}</MONEY>
+        <MONEY>{number}</MONEY>
         <RATE>
           {rate}
           {valuerate === "up" ? (
